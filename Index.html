@@ -1,79 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Quieres ser mi novia?</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f8ff;
-            margin: 0;
-        }
-
-        .container {
-            text-align: center;
-        }
-
-        .buttons {
-            margin-top: 20px;
-        }
-
-        button {
-            padding: 15px 30px;
-            font-size: 20px;
-            cursor: pointer;
-            border: none;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        #yes-button {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        #no-button {
-            background-color: #f44336;
-            color: white;
-        }
-
-        /* Animación de crecimiento para el botón "Sí" */
-        .big {
-            transform: scale(1.5);
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="container">
-        <h1>¿Quieres ser mi novia?</h1>
-        <div class="buttons">
-            <button id="yes-button">Sí</button>
-            <button id="no-button">No</button>
-        </div>
+  <main>
+    <div class="container-letter">
+      <div class="cover"></div>
+      <span class="heart">♥</span>
+      <p class="paper" id="mainMessage">
+        En este día especial de amor y amistad, celebremos los lazos que nos unen. Que la alegría y el cariño nos acompañen siempre. ¡Feliz día!
+      </p>
+      <div class="letter"></div>
     </div>
-
-    <script>
-        // Obtenemos los botones
-        const yesButton = document.getElementById('yes-button');
-        const noButton = document.getElementById('no-button');
-
-        // Acción para el botón "No" (redirigir a otro sitio)
-        noButton.addEventListener('click', function() {
-            window.location.href = "https://www.google.com";  // Redirige a Google
-        });
-
-        // Acción para el botón "Sí" (hacerlo más grande)
-        yesButton.addEventListener('click', function() {
-            yesButton.classList.add('big');  // Aplica el estilo de "más grande"
-        });
-    </script>
-
+    <div class="options">
+      <button id="open">Abrir</button>
+      <button id="close">Cerrar</butto>
+    </div>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
