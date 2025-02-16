@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -9,15 +9,21 @@
 </head>
 
 <body>
+  <!-- 🎵 Música de fondo -->
+  <audio id="background-music" autoplay loop>
+    <source src="assets/musica.mp3" type="audio/mp3">
+    Tu navegador no soporta audio.
+  </audio>
+
   <main>
-    <div id="message">
-      <h1>Siempre supe que dirias que sí <br>♥</h1>
+    <div id="message" style="display: none;">
+      <h1>Siempre supe que dirías que sí <br>♥</h1>
       <img src="./assets/dino_love_2.webp" width="250" alt="Dino Love">
     </div>
     <img src="./assets/dino_love.webp" width="250" alt="Dino Love">
-    <h1>¿Quieres ser mi Novia?</h1>
+    <h1>¿Quieres ser mi novia?</h1>
     <div class="options">
-      <button id="yes">Si</button>
+      <button id="yes">Sí</button>
       <button id="no">No</button>
     </div>
   </main>

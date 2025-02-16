@@ -1,7 +1,5 @@
 /* reset css */
 
-
-
 * {
   min-width: 0;
   font: inherit;
@@ -41,48 +39,46 @@ p {
 body {
   background-color: palegoldenrod;
   height: 100vh;
+}
 
-  & main {
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+}
 
-    & h1 {
-      font-size: 2.5rem;
-      text-align: center;
-      font-weight: 700;
-    }
+.options {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 
-    & .options {
-      font-size: 1.5rem;
-      font-weight: 600;
+.options button {
+  padding: .5rem 1.5rem;
+  border: 2px solid rgba(0, 0, 0, .9);
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+}
 
+.options button:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+}
 
-      & button {
-        padding: .5rem 1.5rem;
-        border: 2px solid rgba(0, 0, 0, .9);
-        border-radius: 5px;
-        cursor: pointer;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-      }
+button#yes {
+  background-color: #97cfaa;
+  margin-right: 2rem;
+}
 
-      & button:hover {
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
-      }
-
-      & button#yes {
-        background-color: #97cfaa;
-        margin-right: 2rem;
-      }
-
-      & button#no {
-        background-color: #f36c46;
-      }
-    }
-  }
+button#no {
+  background-color: #f36c46;
 }
 
 #message {
@@ -92,18 +88,17 @@ body {
   width: 100%;
   height: 100%;
   background-color: palegoldenrod;
-  /* display: flex; */
   display: none;
   justify-content: center;
   align-items: center;
+}
 
-  & h1 {
-    font-size: 3rem;
-    text-align: center;
-    font-weight: 600;
-    animation: palpitation 2s ease-in-out infinite;
-    line-height: 4rem;
-  }
+#message h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+  animation: palpitation 2s ease-in-out infinite;
+  line-height: 4rem;
 }
 
 @keyframes palpitation {
@@ -120,35 +115,7 @@ body {
   }
 }
 
-/* Estilos adicionales para el login */
-#login-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f2f2f2;
-}
-
-#login-form input {
-  margin: 10px;
-  padding: 10px;
-  font-size: 1.2rem;
-  width: 250px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-#login-form button {
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-#login-form button:hover {
-  background-color: #45a049;
+/* 🔹 OCULTAR EL CONTENIDO PRINCIPAL HASTA QUE SE INGRESE EL NOMBRE */
+#main {
+  display: none;
 }
